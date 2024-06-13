@@ -65,6 +65,7 @@ a {
   justify-content: center;
 }
 .top-menu-block-list > li > a {
+  text-transform: uppercase;
   color: #434343;
 }
 .auth-menu-block {
