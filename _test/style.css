@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-auto-rows: minmax(150px, auto);
+}
+.container1 > div {
+  background-color: #eb7181;
+}
+.first {
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  justify-content: end;
+}
+.first > div {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #ff9999;
+  border: 2px solid #000;
+}
+.first > div:nth-child(4) {
+  justify-self: center;
+  align-self: center;
+  padding: 10px 15px;
+}

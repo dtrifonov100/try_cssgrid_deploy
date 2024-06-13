@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    header,
+    article,
+    aside,
+    .adv,
+    footer {
+      border: 1px solid #f99;
+    }
+    .grid {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 8fr 4fr;
+      grid-template-areas:
+        'header header'
+        'article aside'
+        'article adv'
+        'footer footer';
+    }
+    header {
+      grid-area: header;
+    }
+    article {
+      grid-area: article;
+    }
+    aside {
+      grid-area: aside;
+    }
+    .adv {
+      grid-area: adv;
+    }
+    footer {
+      grid-area: footer;
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <header>Header</header>
+      <article>
+        <h1>Title</h1>
+        <p>
+          Здесь показано как работает свойство grid-template-areas у родителя и grid-area у потомков
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+          beatae corporis cupiditate doloremque earum, esse expedita explicabo
+          hic incidunt magni, maiores minus officia praesentium quae reiciendis,
+          sapiente velit voluptate voluptates.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+          beatae corporis cupiditate doloremque earum, esse expedita explicabo
+          hic incidunt magni, maiores minus officia praesentium quae reiciendis,
+          sapiente velit voluptate voluptates.
+        </p>
+      </article>
+      <aside>SideBar</aside>
+      <div class="adv">Advertisment</div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

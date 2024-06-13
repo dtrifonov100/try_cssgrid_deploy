@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ex3</title>
+  </head>
+  <style>
+    .card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-column-gap: 20px;
+      box-shadow: 2px 2px 5px #000;
+    }
+    .elem {
+      border: 1px dashed #ccc;
+    }
+    .image {
+      display: grid;
+      justify-items: stretch;
+      align-items: stretch;
+      grid-row: 1/4;
+      padding: 15px 0;
+    }
+    .image img {
+      display: grid;
+      object-fit: cover;
+      object-position: top;
+    }
+    .text {
+      padding: 0 15px;
+    }
+    .socials {
+      display: grid;
+      /*grid-template-columns: repeat(3, minmax(100px, 1fr));*/
+      grid-auto-flow: column;
+      grid-column-gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+      justify-content: end;
+    }
+    .social {
+      padding: 10px;
+      border: 1px solid #55f;
+    }
+    .grid {
+      display: grid;
+      /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      border: 1px solid #f00;
+      grid-gap: 10px;
+    }
+    .el {
+      border: 1px solid #af0;
+    }
+    @media (max-width: 1030px) {
+      .image {
+        justify-items: center;
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <div class="card">
+        <div class="elem image">
+          <img src="https://lorempixel.com/400/200" alt="" />
+        </div>
+        <div class="elem text">
+          <h2>
+            Title screen Options prop on the navigator The options specified in
+            screenOptions apply to all of the screens in the navigator. So this
+            is a good place to add specify options that you want to configure
+            for the whole navigator.
+          </h2>
+          <p>
+            Text screen Options prop on the navigator You can pass a prop named
+            screenOptions to the navigator component, where you can specify an
+            object with different options. The options specified in
+            screenOptions apply to all of the screens in the navigator. So this
+            is a good place to add specify options that you want to configure
+            for the whole navigator.
+          </p>
+        </div>
+        <div class="elem socials">
+          <div class="social soc1">LIKE</div>
+          <div class="social soc2">COMMENT</div>
+          <div class="social soc3">SHARE</div>
+        </div>
+      </div>
+      <br />
+      <div class="grid">
+        <div class="el">1</div>
+        <div class="el">2</div>
+        <div class="el">3</div>
+        <div class="el">4</div>
+        <div class="el">5</div>
+        <div class="el">6</div>
+        <div class="el">7</div>
+      </div>
+    </main>
+  </body>
+</html>

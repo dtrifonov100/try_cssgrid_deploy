@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="s-header">
+        <div class="header">
+          <nav class="b-header top-menu-block1">
+            <ul class="top-menu-block-list">
+              <li><a href="">Sell</a></li>
+              <li><a href="">Registry</a></li>
+              <li><a href="">Community</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Mobile</a></li>
+              <li><a href="">Gift Cards</a></li>
+            </ul>
+          </nav>
+
+          <div class="b-header logo-block2">
+            <a href="./_test/index.html">
+              <img src="images/logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <div class="background-grey"></div>
+          <nav class="b-header auth-menu-block3">
+            <ul class="auth-menu-block-list">
+              <li><a href="">Register</a></li>
+              <li><a href="">Sign In</a></li>
+              <li><a href="">Wishlist</a></li>
+              <li><a href="">Cart</a></li>
+            </ul>
+          </nav>
+          <nav class="b-header main-menu4">
+            <ul class="main-menu-list">
+              <li><a href="">Art</a></li>
+              <li><a href="">Home & Living</a></li>
+              <li><a href="">Jewelry</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Kids</a></li>
+              <li><a href="">Vintage</a></li>
+              <li><a href="">Weddings</a></li>
+              <li><a href="">More</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="s-main">
+        <div class="main">
+          <div class="b-main b1">1</div>
+          <div class="b-main b2">2</div>
+          <div class="b-main b3">3</div>
+          <div class="b-main b4">
+            <form class="search-form">
+              <div class="search-field">
+                <input id="search" type="text" value="" />
+                <div class="search-placeholder">
+                  <span>Search your product here&nbsp;</span>
+                  <span>(e.g.. Silver diamond ring)</span>
+                </div>
+              </div>
+
+              <div class="search-form__icon"></div>
+            </form>
+          </div>
+          <div class="b-main b5">5</div>
+          <div class="b-main b6">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+          <div class="b-main">6</div>
+        </div>
+      </main>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.querySelector('#search');
+        const searchPlaceholder = document.querySelector('.search-placeholder');
+        searchPlaceholder.addEventListener('click', () => {
+          searchPlaceholder.style.zIndex = -1;
+          searchInput.focus();
+        });
+        searchInput.addEventListener('focusout', () => {
+          searchPlaceholder.style.zIndex = 1;
+        });
+      });
+    </script>
+  </body>
+</html>
